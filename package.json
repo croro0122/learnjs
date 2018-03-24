@@ -1,0 +1,25 @@
+{
+  "name": "learnjs",
+  "version": "1.0.0",
+  "description": "### Beta 3 Changes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/croro0122/learnjs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/croro0122/learnjs/issues"
+  },
+  "homepage": "https://github.com/croro0122/learnjs#readme",
+  "devDependencies": {
+    "connect": "^3.6.6",
+    "livereload": "^0.7.0",
+    "serve-static": "^1.13.2"
+  }
+}
