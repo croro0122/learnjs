@@ -34,12 +34,15 @@ learnjs.problemView = function(data){
 	return view;
 }
 
-
+learnjs.landingView = function(){
+	return learnjs.template('landing-view');
+}
 
 learnjs.showView = function(hash){
 	console.log(hash);
 	var routes = {
-		'#problem': learnjs.problemView
+		'#problem': learnjs.problemView,
+		'': learnjs.landingView
 	};
 	var hashParts = hash.split('-');
 	var viewFn = routes[hashParts[0]];
@@ -84,6 +87,8 @@ learnjs.template = function(name){
 	return $('.templates .'+ name).clone();
 }
 
+
+
 learnjs.buildCorrectFlash = function(prpblemNum){
 	var correctFlash = learnjs.tempalte('correct-flash');
 	var link = correctFlash.find('a');
@@ -95,3 +100,4 @@ learnjs.buildCorrectFlash = function(prpblemNum){
 	}
 	return correctFlash;
 }
+
